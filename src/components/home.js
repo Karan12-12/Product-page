@@ -78,6 +78,24 @@ function Home() {
       price: "15899",
       img: "https://m.economictimes.com/thumb/msid-98897778,width-1200,height-1200,resizemode-4,imgsize-35708/6-latest-mobile-phones-with-12gb-ram-in-india.jpg",
     },
+    {
+      category: "shoes",
+      itemName: "Next Sneaker ",
+      price: "1499",
+      img: "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png",
+    },
+    {
+      category: "mobiles",
+      itemName: "Itel Mobile",
+      price: "13499",
+      img: "https://www.itel-india.com/wp-content/uploads/2024/01/12-min-450x450.jpg",
+    },
+    {
+      category: "electronics",
+      itemName: "LivPure RO+UV ",
+      price: "11999",
+      img: "https://livpure.com/cdn/shop/products/livpure-pep-pro-grand-copper-ro-uv-mineralizer-36187462238361.jpg?v=1686204808&width=1445",
+    },
   ]);
   const [filteredData, setFilteredData] = useState([...productData]);
   const [category, setCategory] = useState("All Products");
@@ -174,7 +192,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="grid  overflow-auto  sm:py-10 sm:grid-cols-2 grid-cols-2 gap-x-2 lg:grid-cols-3 md:h-screen md:w-full w-[100%] md:gap-y-16 gap-y-5 gap-x-0 pt-10 pb-16 px-5 bg-[#cdd0d7] justify-items-center items-center">
+        <div className="grid  overflow-auto  sm:py-10 sm:grid-cols-2 grid-cols-2 gap-x-2 lg:grid-cols-3 md:h-screen   md:w-full w-[100%] md:gap-y-16 gap-y-5 gap-x-0 pt-10 pb-16 px-5 bg-[#cdd0d7] justify-items-center items-center">
           {filteredData.map((item, index) => (
             <div
               key={index}
